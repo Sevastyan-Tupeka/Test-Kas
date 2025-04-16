@@ -1,0 +1,9 @@
+.card-news-key-words-wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  .card-news-key-words__button {
+    color: rgb(48, 48, 248);
+  }
+}

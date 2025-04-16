@@ -1,0 +1,9 @@
+.top-traffic {
+  display: flex;
+  gap: 8px;
+
+  .top-traffic__elem {
+    display: flex;
+    gap: 3px;
+  }
+}

@@ -1,0 +1,36 @@
+.card-news-wrap-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.card-news-text__highlights {
+  margin-bottom: 10px;
+  p {
+    font-size: 15px;
+    kw {
+      padding: 0px 3px 2px;
+      border-radius: 5px;
+      background-color: rgb(36, 113, 255);
+    }
+  }
+}
+
+.card-news-text__text-full {
+  display: none;
+  margin-bottom: 10px;
+  p {
+    font-size: 15px;
+  }
+
+  &.active {
+    display: block;
+  }
+}
+.card-news-text__button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(48, 48, 248);
+  font-size: 15px;
+  margin-bottom: 18px;
+}
