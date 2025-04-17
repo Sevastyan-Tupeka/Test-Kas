@@ -1,3 +1,4 @@
+import DuplicatesCardNews from "./DuplicatesCardNews";
 import HeadCardNews from "./HeadCardNews";
 import "./index.scss";
 import TextCardNews from "./TextCardNews";
@@ -11,6 +12,7 @@ export default function CardNews() {
         <a href="" className="card-news__link">
           Original Source
         </a>
+        <DuplicatesCardNews></DuplicatesCardNews>
       </div>
     </div>
   );

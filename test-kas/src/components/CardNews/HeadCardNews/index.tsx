@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDataNewsContext } from "../../../context/Data.Provider";
+import { useDataNewsContext } from "../../../context/DataNews.Provider";
 import getDate from "../../../utils/getData";
 import GetTopTraffic from "./GetTopTraffic";
 import "./index.scss";
@@ -16,7 +16,7 @@ export default function HeadCardNews() {
   return (
     <div className="card-news-head">
       <div className="card-news-data-information">
-        <ul className="card-news-data-list card-news-data-list_right">
+        <ul className="card-news-data-list">
           <li className="card-news-data__elem">
             <span className="card-news-data__elem_num">
               {getDate(news.DP).slice(0, 1)}
@@ -31,9 +31,6 @@ export default function HeadCardNews() {
             {<GetTopTraffic traffics={news.TRAFFIC}></GetTopTraffic>}
           </li>
         </ul>
-        {
-          // в задаче нету у новости данных про positive/negative, так что я просто поставил positive, про функционал кнопки и чекбокса не понял, просто их отоброзил
-        }
         <ul className="card-news-data-list">
           <li className="card-news-data__positive card-news-data__elem">
             Positive

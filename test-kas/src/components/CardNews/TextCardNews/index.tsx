@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDataNewsContext } from "../../../context/Data.Provider";
+import { useDataNewsContext } from "../../../context/DataNews.Provider";
 import "./index.scss";
 import CardsKeyWords from "./CardsKeyWords";
 

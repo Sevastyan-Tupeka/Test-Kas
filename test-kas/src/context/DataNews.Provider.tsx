@@ -4,7 +4,7 @@ import { dataNews } from "../dataNews";
 
 export const DataNewsContext = createContext<IData_SnippetNews>(dataNews);
 
-export function DataContextProvider({ children }: { children: ReactNode }) {
+export function DataNewsContextProvider({ children }: { children: ReactNode }) {
   return (
     <DataNewsContext.Provider value={dataNews}>
       {children}

@@ -1,0 +1,44 @@
+.card-news-custom-select {
+  position: relative;
+
+  .card-news-custom-select__value {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    justify-content: space-between;
+    cursor: pointer;
+
+    span {
+      font-size: 15px;
+      color: rgb(185, 185, 185);
+    }
+    i {
+      font-size: 15px;
+    }
+  }
+
+  .card-news-custom-select__option-wrap {
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  .card-news-custom-select__option {
+    width: 100%;
+    font-size: 15px;
+    text-align: start;
+  }
+}

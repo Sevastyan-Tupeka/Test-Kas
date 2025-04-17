@@ -1,13 +1,20 @@
+import { Provider } from "react-redux";
 import "./App.css";
 import CardNews from "./components/CardNews";
-import { DataContextProvider } from "./context/Data.Provider";
+import { DataAllNewsContextProvider } from "./context/DataAllNews.Provider";
+import { DataNewsContextProvider } from "./context/DataNews.Provider";
+import { store } from "./store";
 
 function App() {
   return (
     <>
-      <DataContextProvider>
-        <CardNews></CardNews>
-      </DataContextProvider>
+      <Provider store={store}>
+        <DataAllNewsContextProvider>
+          <DataNewsContextProvider>
+            <CardNews></CardNews>
+          </DataNewsContextProvider>
+        </DataAllNewsContextProvider>
+      </Provider>
     </>
   );
 }
